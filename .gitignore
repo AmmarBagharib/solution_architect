@@ -3,9 +3,15 @@ __pycache__/
 *.py[cod]
 *$py.class
 details.txt
-
+.env.template
 # C extensions
 *.so
+
+# Environment variables
+.env
+
+# Virtual environment
+soln_architect/
 
 # Distribution / packaging
 .Python
