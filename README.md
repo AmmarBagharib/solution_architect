@@ -6,10 +6,6 @@ solution_architect/
 ├── requirements.txt
 ├── app.py
 ├── run.sh
-├── config/
-│   ├── __init__.py
-│   ├── settings.py # Application settings and configuration
-│   └── cloud_providers.py # Cloud provider information and endpoints
 ├── agents/
 │   ├── __init__.py
 │   ├── base_agent.py # Base agent with common functionality
@@ -17,30 +13,14 @@ solution_architect/
 │   ├── scraping_agent.py # Agent for scraping cloud pricing data
 │   ├── solution_architect_agent.py # Agent for architecture recommendations
 │   └── mathematics_agent.py # Agent for cost calculations and validation
-├── utils/
-│   ├── __init__.py
-│   ├── data_processing.py # Data transformation utilities
-│   ├── cost_calculations.py # Helper functions for cost calculations
-│   └── validation.py # Input validation utilities
 ├── data/
-│   ├── __init__.py
-│   ├── cache/ # Cache directory for scraped pricing data
-│   │   └── .gitkeep
-│   ├── schemas/ # JSON schemas for validation
-│   │   └── requirements_schema.json
-│   └── templates/  # Architecture templates and patterns
-│       └── architecture_patterns.json
-├── static/
-│   ├── css/ # Streamlit custom CSS
-│   │   └── style.css
-│   └── images/ # Images for the web application
-│       └── logo.png
-└── tests/
     ├── __init__.py
-    ├── test_master_agent.py
-    ├── test_scraping_agent.py
-    ├── test_solution_architect_agent.py
-    └── test_mathematics_agent.py
+    ├── cache/ # Cache directory for scraped pricing data
+    │   └── .gitkeep
+    ├── schemas/ # JSON schemas for validation
+    │   └── requirements_schema.json
+    └── templates/  # Architecture templates and patterns
+        └── architecture_patterns.json
 ```
 
 ## Overview
@@ -73,7 +53,7 @@ git clone https://github.com/yourusername/cloud-architecture-recommendation.git
 cd cloud-architecture-recommendation
 
 # Create a virtual environment
-python -m venv venv
+python -m venv soln_architect
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
@@ -81,12 +61,7 @@ pip install -r requirements.txt
 ```
 
 ## API Setup
-1. Copy `.env.template` to `.env`:
-```bash
-cp .env.template .env
-```
-
-2. Add your DeepSeek API key to the `.env` file:
+1. Add your DeepSeek API key to the `.env` file:
 ```
 DEEPSEEK_API_KEY=your_api_key_here
 ```
