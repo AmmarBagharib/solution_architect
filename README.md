@@ -42,15 +42,15 @@ The system consists of four main agents:
 4. **Mathematics Agent**: Validates that recommended architectures meet budget constraints and calculates TCO
 
 ## Technical Requirements
-- Python 3.8+
+- Python 3.11+
 - Open-source models and tools only
 - No paid services or APIs except for Deepseek API (need to create an account an top up credits!!) - https://platform.deepseek.com/usage
 
 ## Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/cloud-architecture-recommendation.git
-cd cloud-architecture-recommendation
+git clone https://github.com/AmmarBagharib/solution_architect/tree/main
+cd solution_architect
 
 # Create a virtual environment
 python -m venv soln_architect
@@ -84,4 +84,4 @@ This will launch a web interface where you can:
 - Implemented Scraping Agent with caching mechanism
 - Implemented Mathematics Agent for cost calculations and budget validation
 - Implemented Solution Architect Agent with architecture patterns
-- Working on Master Agent implementation
+- To implement Master Agent as an interactive chatbot LLM
