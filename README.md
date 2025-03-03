@@ -53,8 +53,8 @@ git clone https://github.com/AmmarBagharib/solution_architect/tree/main
 cd solution_architect
 
 # Create a virtual environment
-python -m venv soln_architect
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python3 -m venv soln_architect
+source soln_architect/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
