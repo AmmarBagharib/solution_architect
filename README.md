@@ -44,7 +44,7 @@ The system consists of four main agents:
 ## Technical Requirements
 - Python 3.8+
 - Open-source models and tools only
-- No paid services or APIs
+- No paid services or APIs except for Deepseek API (need to create an account an top up credits!!) - https://platform.deepseek.com/usage
 
 ## Installation
 ```bash
