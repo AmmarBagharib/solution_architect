@@ -38,7 +38,7 @@ The system consists of four main agents:
 
 1. **Master Agent**: Interfaces with users, collects requirements, and orchestrates the workflow between other agents
 2. **Scraping Agent**: Collects up-to-date pricing information from cloud providers using crawl4ai
-3. **Solution Architect Agent**: Analyzes requirements and develops appropriate architecture recommendations
+3. **Solution Architect Agent**: Analyzes requirements and develops appropriate architecture recommendations using Deepseek Reasoner.
 4. **Mathematics Agent**: Validates that recommended architectures meet budget constraints and calculates TCO
 
 ## Technical Requirements
